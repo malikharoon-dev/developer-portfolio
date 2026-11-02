@@ -1,20 +1,29 @@
+
 import { projects } from '../data/projects'
 import ProjectCard from './ProjectCard'
 import Reveal from './Reveal'
 
 export default function Projects() {
   return (
-    <section id="projects" className="section" aria-labelledby="projects-heading">
+    <section
+      id="projects"
+      className="section projects-section"
+      aria-labelledby="projects-heading"
+    >
       <Reveal>
-        <p className="eyebrow">Projects</p>
-        <h2 id="projects-heading">Featured work</h2>
-        <p className="section-copy">
-          Sample cards are included so you can see the layout. Replace them in
-          {' '}
-          <code>src/data/projects.js</code>
-          {' '}
-          with your own repositories.
-        </p>
+        <div className="projects-heading">
+          <p className="eyebrow">MY WORK</p>
+
+          <h2 id="projects-heading">
+            Selected <span>Projects</span>
+          </h2>
+
+          <p className="section-copy">
+            A collection of projects where I explore programming,
+            artificial intelligence, and build practical solutions
+            through code.
+          </p>
+        </div>
       </Reveal>
 
       <div className="project-grid">
