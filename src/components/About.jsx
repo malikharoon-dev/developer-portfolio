@@ -5,8 +5,15 @@ export default function About() {
   return (
     <section id="about" className="section" aria-labelledby="about-heading">
       <Reveal>
-        <p className="eyebrow">About</p>
-        <h2 id="about-heading">A concise introduction</h2>
+      <div className="about-heading">
+  <p className="eyebrow">GET TO KNOW ME</p>
+  <h2 id="about-heading">
+    Beyond the <span>Code</span>
+  </h2>
+  <p className="section-copy">
+    A little about my journey, interests, and passion for technology.
+  </p>
+</div>
       </Reveal>
 
       <div className="about-grid">

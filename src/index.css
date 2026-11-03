@@ -950,3 +950,54 @@ a:focus-visible {
     margin-bottom: 2.5rem;
   }
 }
+/* Mobile Project Grid */
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .project-card {
+    padding: 1.4rem;
+  }
+}
+/* About Section Layout Fix */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.about-intro {
+  padding: 2rem;
+  background: linear-gradient(
+    145deg,
+    rgba(145, 75, 255, 0.10),
+    rgba(22, 200, 232, 0.04)
+  );
+  border: 1px solid rgba(145, 75, 255, 0.2);
+  border-radius: 20px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.about-body p {
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
