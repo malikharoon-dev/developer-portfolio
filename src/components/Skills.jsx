@@ -1,15 +1,25 @@
+
 import { profile } from '../data/profile'
 import Reveal from './Reveal'
 
 export default function Skills() {
   return (
-    <section id="skills" className="section" aria-labelledby="skills-heading">
+    <section
+      id="skills"
+      className="section skills-section"
+      aria-labelledby="skills-heading"
+    >
       <Reveal>
-        <p className="eyebrow">Skills</p>
-        <h2 id="skills-heading">Technologies I work with</h2>
-        <p className="section-copy">
-          These are tools I use while learning and building. This list is editable and is not a claim of professional mastery.
-        </p>
+        <div className="skills-heading">
+          <p className="eyebrow">MY TOOLKIT</p>
+          <h2 id="skills-heading">
+            Skills &amp; <span>Technologies</span>
+          </h2>
+          <p className="section-copy">
+            The languages, tools, and technologies I'm learning
+            and using to turn ideas into practical projects.
+          </p>
+        </div>
       </Reveal>
 
       <div className="skill-groups">
