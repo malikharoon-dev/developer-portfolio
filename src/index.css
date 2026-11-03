@@ -400,11 +400,21 @@ main {
 .interest-list li,
 .tech-list li,
 .skill-card li {
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(145, 75, 255, 0.22);
+  background: rgba(145, 75, 255, 0.07);
+  color: var(--muted);
   border-radius: 999px;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 220ms ease;
+}
+
+.tech-list li:hover {
+  color: var(--accent-cyan);
+  border-color: rgba(22, 200, 232, 0.45);
+  background: rgba(22, 200, 232, 0.08);
 }
 
 .skill-groups,
@@ -445,17 +455,39 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  padding: 1.8rem;
+  background: linear-gradient(
+    145deg,
+    rgba(23, 21, 45, 0.95),
+    rgba(12, 12, 29, 0.98)
+  );
+  border: 1px solid rgba(145, 75, 255, 0.18);
+  border-radius: 20px;
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    background 220ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(145, 75, 255, 0.45);
-  box-shadow:
-    0 0 0 1px rgba(145, 75, 255, 0.10),
-    0 18px 40px rgba(0, 0, 0, 0.35);
+  transform: translateY(-7px);
+  border-color: rgba(145, 75, 255, 0.65);
+  box-shadow: 0 15px 45px rgba(145, 75, 255, 0.13);
+}
+.project-meta h3 {
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7rem;
+  transition: color 220ms ease;
 }
 
+.project-card:hover .project-meta h3 {
+  color: var(--accent-strong);
+}
 .project-meta p {
   color: var(--muted);
 }
