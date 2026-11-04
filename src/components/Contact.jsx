@@ -78,11 +78,16 @@ export default function Contact() {
   return (
     <section id="contact" className="section" aria-labelledby="contact-heading">
       <Reveal>
-        <p className="eyebrow">Contact</p>
-        <h2 id="contact-heading">Let’s talk</h2>
-        <p className="section-copy">
-          Use the form or reach me through the links. Replace the placeholder email and profile URLs before sharing this site.
-        </p>
+      <div className="contact-heading">
+  <p className="eyebrow">GET IN TOUCH</p>
+  <h2 id="contact-heading">
+    Let's <span>Connect</span>
+  </h2>
+  <p className="section-copy">
+    Have a project idea, an opportunity, or just want to talk
+    about technology and AI? I'd be happy to hear from you.
+  </p>
+</div>
       </Reveal>
 
       <div className="contact-grid">

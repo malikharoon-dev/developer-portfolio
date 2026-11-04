@@ -1,37 +1,50 @@
-/**
- * Personal profile configuration.
- * Replace placeholder values with your real details before publishing.
- */
+
 export const profile = {
-  name: 'Malik',
-  shortName: 'Malik',
-  role: 'Developer',
-  headline: 'Building useful software with care and clarity.',
+  name: 'Haroon Malik',
+  shortName: 'Haroon',
+  role: 'BS Artificial Intelligence Student',
+  headline: 'Exploring AI. Building with code.',
   subtitle:
-    'I design and build web projects, automation tools, and practical applications — focused on clean interfaces and reliable code.',
-  location: 'Add your location',
-  email: 'your.email@example.com',
-  github: 'https://github.com/your-username',
-  linkedin: '',
-  resumeUrl: '',
+    'I am an Artificial Intelligence student at UMT Lahore, interested in software development, web technologies, Python, and building practical applications.',
+  location: 'Lahore, Pakistan',
+  email: 'malikharoonahmad191@gmail.com',
+  github: 'https://github.com/malikharoon-dev',
+linkedin: 'https://www.linkedin.com/in/muhammadharoonahmad',
+resumeUrl: '',
+
   about: {
     intro:
-      'I am a developer interested in software development, automation, and turning ideas into useful projects. This site is a living snapshot of what I am learning and building.',
+      'I am Haroon Malik, a BS Artificial Intelligence student at UMT Lahore, building my foundation in programming and exploring how technology can solve real-world problems.',
+
     paragraphs: [
-      'I enjoy working across the stack: structuring interfaces, writing JavaScript, and using Python to automate repetitive work. I care about readable code, accessible design, and projects that solve a real problem.',
-      'Replace this paragraph with a short note about how you work, the kinds of problems you like, or what you are exploring next. Keep it factual — this text is a placeholder until you customize it.',
+      'My learning journey involves programming, web development, and artificial intelligence. I enjoy turning concepts into practical projects and improving my skills through hands-on experience.',
+
+      'I have worked on projects including a Python-based IMDb Top 250 Movies Scraper, a Football Performance Tracker, and my personal developer portfolio. I am continuously learning, experimenting with new technologies, and working towards becoming a stronger developer.',
     ],
-    interests: ['Software development', 'Automation', 'Useful side projects'],
+
+    interests: [
+      'Artificial Intelligence',
+      'Software Development',
+      'Web Development',
+      'Python Programming',
+      'Problem Solving',
+    ],
   },
+
   skillGroups: [
     {
-      title: 'Frontend',
+      title: 'Frontend Development',
       items: ['HTML', 'CSS', 'JavaScript', 'React'],
     },
     {
-      title: 'Languages & tools',
-      items: ['Python', 'Git', 'GitHub'],
+      title: 'Programming & Data',
+      items: ['Python', 'C++', 'Pandas', 'BeautifulSoup', 'Selenium'],
+    },
+    {
+      title: 'Tools & Platforms',
+      items: ['Git', 'GitHub', 'VS Code', 'Vite'],
     },
   ],
+
   formEndpoint: '',
 }
