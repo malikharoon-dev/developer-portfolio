@@ -58,7 +58,10 @@ export default function Contact() {
         body: JSON.stringify(values),
       })
 
-      if (!response.ok) throw new Error('Request failed')
+      if (!response.ok) {
+        const result = await response.json().catch(() => ({}))
+        throw new Error(result.error || 'Request failed')
+      }
 
       setValues(initialValues)
       setStatus({

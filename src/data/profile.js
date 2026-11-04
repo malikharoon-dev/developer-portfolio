@@ -46,5 +46,5 @@ resumeUrl: '',
     },
   ],
 
-  formEndpoint: '',
+  formEndpoint: 'https://formspree.io/f/maeeadde',
 }

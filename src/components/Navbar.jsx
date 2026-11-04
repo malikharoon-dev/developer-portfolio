@@ -1,3 +1,4 @@
+
 import { useEffect, useId, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { profile } from '../data/profile'
@@ -32,16 +33,21 @@ export default function Navbar() {
   const close = () => setOpen(false)
 
   return (
-    <header className={`nav ${scrolled ? 'is-scrolled' : ''} ${open ? 'menu-open' : ''}`}>
+    <header
+      className={`nav ${scrolled ? 'is-scrolled' : ''} ${open ? 'menu-open' : ''}`}
+    >
       <div className="nav-inner">
         <a className="logo" href="#home" onClick={close}>
           <span className="logo-mark" aria-hidden="true">
             {profile.shortName.slice(0, 1)}
           </span>
-          <span>{profile.name}</span>
+          <span className="logo-name">
+            {profile.name}
+            <span className="logo-dot">.</span>
+          </span>
         </a>
 
-        <nav className="nav-desktop" aria-label="Primary">
+        <nav className="nav-desktop" aria-label="Primary navigation">
           {links.map((link) => (
             <a key={link.href} href={link.href}>
               {link.label}
@@ -54,10 +60,14 @@ export default function Navbar() {
           type="button"
           aria-expanded={open}
           aria-controls={menuId}
+          aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
           onClick={() => setOpen((value) => !value)}
         >
-          {open ? <X size={22} strokeWidth={1.75} /> : <Menu size={22} strokeWidth={1.75} />}
-          <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
+          {open ? (
+            <X size={22} strokeWidth={1.75} />
+          ) : (
+            <Menu size={22} strokeWidth={1.75} />
+          )}
         </button>
       </div>
 
@@ -66,7 +76,7 @@ export default function Navbar() {
         className={`nav-mobile ${open ? 'is-open' : ''}`}
         hidden={!open}
       >
-        <nav aria-label="Mobile">
+        <nav aria-label="Mobile navigation">
           {links.map((link) => (
             <a key={link.href} href={link.href} onClick={close}>
               {link.label}
