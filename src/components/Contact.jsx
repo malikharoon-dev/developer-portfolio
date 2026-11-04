@@ -66,7 +66,7 @@ export default function Contact() {
       setValues(initialValues)
       setStatus({
         type: 'success',
-        message: 'Your message was submitted through the configured form service.',
+        message: 'Thanks for reaching out! Your message has been sent successfully.',
       })
     } catch {
       setStatus({
@@ -124,6 +124,7 @@ export default function Contact() {
                 name="name"
                 type="text"
                 autoComplete="name"
+                placeholder="Your name"
                 value={values.name}
                 onChange={onChange}
                 aria-invalid={Boolean(errors.name)}
@@ -143,6 +144,7 @@ export default function Contact() {
                 name="email"
                 type="email"
                 autoComplete="email"
+                placeholder="you@example.com"
                 value={values.email}
                 onChange={onChange}
                 aria-invalid={Boolean(errors.email)}
@@ -161,6 +163,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 rows="5"
+                placeholder="Tell me a little about your project or idea..."
                 value={values.message}
                 onChange={onChange}
                 aria-invalid={Boolean(errors.message)}

@@ -443,10 +443,14 @@ main {
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 2rem;
+  gap: 2.rem;
   margin-top: 2rem;
 }
-
+.contact-grid {
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
 .about-intro {
   font-size: 1.2rem;
   color: var(--text);
@@ -619,7 +623,19 @@ main {
     color 220ms ease,
     transform 220ms ease;
 }
+.contact-link {
+  padding: 0.9rem 1rem;
+  background: rgba(145, 75, 255, 0.06);
+  border: 1px solid rgba(145, 75, 255, 0.15);
+  border-radius: 12px;
+}
 
+.contact-link:hover {
+  color: var(--accent-cyan);
+  border-color: rgba(22, 200, 232, 0.35);
+  background: rgba(22, 200, 232, 0.06);
+  transform: translateY(-3px);
+}
 .project-links a:hover {
   color: var(--accent-cyan);
   transform: translateY(-2px);
@@ -641,13 +657,30 @@ main {
 
 .contact-panel {
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
   align-content: start;
+  padding: 2rem;
+  background: linear-gradient(
+    145deg,
+    rgba(23, 21, 45, 0.95),
+    rgba(12, 12, 29, 0.98)
+  );
+  border: 1px solid rgba(145, 75, 255, 0.2);
+  border-radius: 20px;
 }
 
 .contact-form {
   display: grid;
-  gap: 1rem;
+  gap: 1.3rem;
+  padding: 2rem;
+  background: linear-gradient(
+    145deg,
+    rgba(23, 21, 45, 0.95),
+    rgba(12, 12, 29, 0.98)
+  );
+  border: 1px solid rgba(145, 75, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 .field {
@@ -699,23 +732,68 @@ a:focus-visible {
   color: var(--danger);
 }
 
+
 .footer {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 1.6rem 0 2.4rem;
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  padding: 2rem 0 2.4rem;
+  border-top: 1px solid rgba(145, 75, 255, 0.2);
   color: var(--muted);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-brand {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.footer-brand span {
+  color: var(--accent-cyan);
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 .footer-links {
   display: flex;
-  gap: 1.1rem;
+  align-items: center;
+  gap: 1.3rem;
   flex-wrap: wrap;
 }
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-cyan);
+  transform: translateY(-2px);
+}
+
 
 .reveal {
   opacity: 0;
