@@ -45,7 +45,6 @@ Edit these files:
 
 Replace placeholder project cards before publishing. Do not invent GitHub repositories or demo URLs.
 
-adding new changes regarding pages and project links.
 
 To connect the contact form to a real service (for example Formspree), set `formEndpoint` in `src/data/profile.js`. Until that value is set, the form validates input and explains that nothing has been delivered.
 
