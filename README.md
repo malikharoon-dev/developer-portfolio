@@ -57,3 +57,5 @@ Any static host works with the `dist/` folder:
 - [GitHub Pages](https://pages.github.com/)
 
 Typical settings: build command `npm run build`, publish directory `dist`.
+
+building another project nearby fields.
