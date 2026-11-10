@@ -58,4 +58,4 @@ Any static host works with the `dist/` folder:
 
 Typical settings: build command `npm run build`, publish directory `dist`.
 
-building another project nearby fields.
+building another project nearby , gonna be a big one
